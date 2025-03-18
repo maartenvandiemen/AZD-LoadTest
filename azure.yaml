@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
+
+name: tdd-azd-loadtest
+metadata:
+  template: tdd-azd-loadtest@0.0.1-beta
+infra:
+   provider: bicep
+services:
+  api:
+    project: ./api
+    language: dotnet
+    host: appservice
+hooks:  
+  postdeploy:
+    windows:
+      shell: pwsh
+      continueOnError: false
+      interactive: true
+      run: azd-hooks/postdeploy.ps1
+    posix:
+      shell: pwsh
+      continueOnError: false
+      interactive: true
+      run: azd-hooks/postdeploy.ps1
+  preprovision:
+    windows:
+      shell: pwsh
+      continueOnError: true
+      run: azd-hooks/preprovision.ps1
+    posix:
+      shell: pwsh
+      continueOnError: true
+      run: azd-hooks/preprovision.ps1
