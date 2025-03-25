@@ -25,9 +25,9 @@ hooks:
   preprovision:
     windows:
       shell: pwsh
-      continueOnError: true
+      continueOnError: false
       run: azd-hooks/preprovision.ps1
     posix:
       shell: pwsh
-      continueOnError: true
+      continueOnError: false
       run: azd-hooks/preprovision.ps1
