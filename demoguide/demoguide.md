@@ -21,7 +21,7 @@
 
 ***
 ### 1. What Resources are getting deployed
-This scenario deploys the sample **.NET EShopOnWeb Retail** application inside a **Azure App Service**. The data is stored in **Azure SQL** and the secrets are stored in **Azure KeyVault**. The communication for retrieval of the secrets is done with **System Assigned Managed Identity**. When deployed, the following resources are available:
+This scenario deploys the sample **TodoItems .NET** application inside a **Azure App Service**. When deployed, the following resources are available:
 
 * site-todoitems-%uniqueid% - Azure App Service
 * sitePlan-todoitems-%uniqueid% - Azure Service Plan
