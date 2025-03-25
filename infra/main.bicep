@@ -49,3 +49,4 @@ module appService 'modules/appService.bicep' = {
 output AZURE_LOADTEST_NAME string = loadtest.outputs.loadtestName
 output AZURE_RG_NAME string = rg.name
 output AZURE_API_HOST string = appService.outputs.webAppUrl
+output AZURE_API_SCALAR string = '${appService.outputs.webAppUrl}/scalar/v1'

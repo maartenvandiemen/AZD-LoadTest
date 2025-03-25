@@ -4,3 +4,4 @@
 
 - [.NET Core 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
 - [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell)
+- [Azure CLI 2.66 or higher](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)

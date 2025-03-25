@@ -29,6 +29,8 @@ This scenario deploys the sample **.NET EShopOnWeb Retail** application inside a
 * workspace-todoitems-%uniqueid% - Azure Log Analytics Workspace
 * lt-%uniqueid% - Azure Load Test
 
+The url of the site can be requested when running the command `AZD ENV get-value AZURE_API_SCALAR`
+
 <img src="img/ResourceGroup_Overview.png" alt="Resource Group" style="width:100%;">
 <br></br>
 
